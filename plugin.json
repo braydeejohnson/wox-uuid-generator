@@ -1,0 +1,12 @@
+{
+  "ID": "ae50c12c-8d5a-4923-8281-5d1722159bbc",
+  "ActionKeyword": "uuid",
+  "Name": "UUID Generator",
+  "Description": "Generate a UUID v4",
+  "Author": "braydeejohnson",
+  "Version": "1.0",
+  "Language": "python",
+  "Website": "https://github.com/Wox-launche/Wox",
+  "IcoPath": "Images\\app.png",
+  "ExecuteFileName": "main.py"
+}
