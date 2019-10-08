@@ -1,8 +1,11 @@
 # -*- coding: utf-8 -*-
-
 from wox import Wox, WoxAPI
 import uuid
 import pyperclip
+from services.Application import Application
+
+app = Application()
+
 
 class Uuid(Wox):
 
@@ -12,13 +15,13 @@ class Uuid(Wox):
         results.append({
             "Title": "Uuid Generator",
             "SubTitle": _uuid,
-            "IcoPath":"Images/app.ico",
+            "IcoPath": "Images/app.ico",
             "ContextData": _uuid,
             'JsonRPCAction': {
-              'method': 'copy_clip',
-              'parameters': [_uuid],
-              'dontHideAfterAction': True
-          }
+                'method': 'copy_clip',
+                'parameters': [_uuid],
+                'dontHideAfterAction': True
+            }
         })
         return results
 
@@ -31,9 +34,10 @@ class Uuid(Wox):
         results.append({
             "Title": "Context menu entry",
             "SubTitle": "Data: {}".format(data),
-            "IcoPath":"Images/app.ico"
+            "IcoPath": "Images/app.ico"
         })
         return results
+
 
 if __name__ == "__main__":
     Uuid()
